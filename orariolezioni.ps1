@@ -270,6 +270,7 @@ $prop=@"
 {"key":"8531","text":"SCIENZE E TECNOLOGIE ALIMENTARI [LM]","type":"Corso","available":true,"cssClass":"","internalKey":"/wEFBDg1MzHQnTiAzvmBRV2IAQLT+bEvVvN9hZG8BzL5Od0ON4w2cw=="},
 {"key":"8527","text":"VITICOLTURA ED ENOLOGIA [L]","type":"Corso","available":true,"cssClass":"","internalKey":"/wEFBDg1Mjcebs+X8YcbIjbE5AsjZxRG7H0RQL0tOUAEodUevYSrsg=="}]
 "@
+
 $ob=convertfrom-json -InputObject $prop
     #https://corsi.unibo.it/laurea/TecnologieAlimentari/appelli?appelli=&b_start:int=90
     #https://www.unibo.it/uniboweb/utils/orariolezioni/calendario.aspx?Scuola=1&Corso=8528,8527,8531&Edificio=65&Data=04/10/2018
