@@ -286,10 +286,8 @@ $ob=convertfrom-json -InputObject $prop
     $end='//]]>'
     $PAGE=$webresponse.Content
     #estrae fra parentesi graffe
-    $regex="(?m)\{(?:(?:\{(?:(?:\{(?:[^{}])*\})|(?:[^{}]))*\})|(?:[^{}]))*\}"
+    $regex="(?smi)\{(?:(?:\{(?:(?:\{(?:[^{}])*\})|(?:[^{}]))*\})|(?:[^{}]))*\}"
 
-    $regex='(?m)\"(?:(?:\"(?:(?:\"(?:[^{}])*\")|(?:[^{}]))*\")|(?:[^{}]))*\"'
-    $regex='(?m)\[(?:(?:\[(?:(?:\[(?:[^[]])*\[)|(?:[^[]]))*\[)|(?:[^[]]))*\]'
     $ma=$PAGE.Substring(1, $PAGE.length-1)-match $regex
     $pclea=($page -replace "`r`n") -replace '\\"',"'"
     $r = $pclea  -split '"'
