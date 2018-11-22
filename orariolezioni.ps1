@@ -287,7 +287,8 @@ $ob=convertfrom-json -InputObject $prop
     $PAGE=$webresponse.Content
     #estrae fra parentesi graffe
     $regex="(?smi)\{(?:(?:\{(?:(?:\{(?:[^{}])*\})|(?:[^{}]))*\})|(?:[^{}]))*\}"
-    $ma=$PAGE -allmatches $regex
+    $ma=$PAGE -match $regex
+    #ora
 
 
     $regex1='(?m)\"(?:(?:\"(?:(?:\"(?:[^{}])*\")|(?:[^{}]))*\")|(?:[^{}]))*\"'
