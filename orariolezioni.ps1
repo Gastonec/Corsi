@@ -288,7 +288,7 @@ $ob=convertfrom-json -InputObject $prop
     #estrae fra parentesi graffe
     $regex="(?smi)\{(?:(?:\{(?:(?:\{(?:[^{}])*\})|(?:[^{}]))*\})|(?:[^{}]))*\}"
     $ma=$PAGE -match $regex
-    #ora
+    #oraora
 
 
     $regex1='(?m)\"(?:(?:\"(?:(?:\"(?:[^{}])*\")|(?:[^{}]))*\")|(?:[^{}]))*\"'
